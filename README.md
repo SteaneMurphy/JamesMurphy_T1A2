@@ -24,6 +24,8 @@ The portfolio consists of multiple pages, highlighting different web components 
 
 ## WIREFRAMES
 
+![HomePageWF](./docs/HomePageWF.png)
+
 ## TARGET AUDIENCE
 
 ## TECH STACK
