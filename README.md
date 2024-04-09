@@ -32,6 +32,8 @@ The portfolio consists of multiple pages, highlighting different web components 
 
 ![PortfolioPageWF](./docs/PortfolioWF.png)
 
+![BlogPageWF](./docs/BlogWF.png)
+
 ## TARGET AUDIENCE
 
 ## TECH STACK
