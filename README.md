@@ -26,6 +26,17 @@ The portfolio consists of multiple pages, highlighting different web components 
 
 ![HomePageWF](./docs/HomePageWF.png)
 
+![AboutMeWF](./docs/AboutMeWF.png)
+
+![ContactPageWF](./docs/ContactPageWF.png)
+
+![PortfolioPageWF](./docs/PortfolioWF.png)
+
 ## TARGET AUDIENCE
 
 ## TECH STACK
+
+- draw.io
+- HTML
+- CSS
+- git
