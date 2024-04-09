@@ -18,6 +18,8 @@ The portfolio consists of multiple pages, highlighting different web components 
 
 ## SITEMAP
 
+![SiteMapPicture](./docs/Sitemap.png)
+
 ## COMPONENT LIST
 
 ## WIREFRAMES
