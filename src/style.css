@@ -10,32 +10,88 @@ body {
     flex-direction: row;
 }
 
+p, a
+{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
 .navbar
 {
+    display: flex;
     width: 100%;
     height: 5vh;
     position: fixed;
-    top: 0;
-    background: blue;
+    background: #000000;
+    padding: 0 1em;
+}
+
+.title
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.title img
+{
+    width: 2%;
+}
+
+.navlinks
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .header
 {
     width: 100%;
     height: 30vh;
-    background: red;
+    background: #1B2A41;
 }
 
 .main
 {
     width: 100%;
     height: 100vh;
-    background: green;
+    background: #0C1821;
 }
 
 .footer
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
     width: 100%;
-    height: 10vh;
-    background: yellow;
+    height: 5vh;
+    background: #324A5F;
+}
+
+.socials
+{
+    width: 33%;
+    flex: 1;
+}
+
+.copyright
+{
+    flex: 1;
+}
+
+.socials img
+{
+    flex: 1;
+    width: 8%;
+    padding: 0 1em;
+}
+
+.socials img:hover
+{
+    background: red;
 }
