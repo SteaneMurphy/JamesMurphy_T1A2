@@ -14,6 +14,7 @@ body {
 nav
 {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -24,12 +25,14 @@ nav
 
 nav a, p, h4
 {
-    font-family: Helvetica, sans-serif;
+    text-shadow: 0px 0px 10px #FE2280;
+    font-family: "gaps", sans-serif;
     color: white;
 }
 
 nav h4
 {
+    color: white;
     padding-left: 1em;
 }
 
@@ -47,7 +50,7 @@ nav a
 
 nav a:hover
 {
-    color: #00A6FB;
+    color: #FE2280;
 }
 
 #navlinks p
@@ -90,14 +93,70 @@ nav a:hover
 }
 /* Navigation Bar Component Styling: End */
 
+/* Home Page Header Styling: Start */
+@font-face 
+{ 
+    font-family: gaps; src: url("./fonts/gaps.otf"); 
+} 
 header
 {
-    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: start;
+    width: 100%;
+    height: 40vh;
+    padding-top: 2em;
+    background: #d583c5;
+    background-image: linear-gradient(#051923 20%, #FE2280);
+    /*00094A*/
+    font-family: "gaps", sans-serif;
+    font-style: normal;
+    font-variation-settings: "HORZ" 0, "LIFT" 100, "THRU" 50, "VERT" 0;
+    color: white;
 }
+
+header h1, #leftside
+{
+        margin-left: 10%;
+}
+
+header h1
+{
+    font-family: "gaps", sans-serif;
+    text-shadow: 0px 0px 10px #FE2280;
+    font-weight: 1000;
+    font-style: normal;
+    color: #ffffff;
+    height: 0.1em;
+    font-size: 4em;
+    width: 60%;
+}
+
+#subheading
+{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+header h2
+{
+    padding-right: 1em;
+    text-shadow: 0px 0px 10px #1e0349;
+}
+/* Home Page Header Styling: End */
 
 main
 {
+    width: 100%;
     height: 100vh;
+    background: #006494;
+    background-image: url("./images/headerbg.jpg");
+    background-position: 0 305px;
+    background-size: 100% 100%;
+    border: 0;
 }
 
 /* Footer Component Styling: Start */
@@ -114,14 +173,15 @@ footer
 
 footer a, p
 {
+    text-shadow: 0px 0px 10px #FE2280;
     text-decoration: none;
-    font-family: Helvetica, sans-serif;
+    font-family: "gaps", sans-serif;
     color: white;
 }
 
 footer a:hover
 {
-    color: #00A6FB;
+    color: #FE2280;
 }
 
 footer p
@@ -153,7 +213,7 @@ footer p
 #socialbar img:hover
 {
     filter: blur(2px);
-    background: #00A6FB;;
+    background: #FE2280;;
 }
 
 @media only screen and (max-width: 510px)
