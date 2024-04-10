@@ -4,7 +4,13 @@
     padding: 0;
 }
 
-body {
+@font-face 
+{ 
+    font-family: gaps; src: url("./fonts/gaps.otf"); 
+} 
+
+body 
+{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -94,10 +100,6 @@ nav a:hover
 /* Navigation Bar Component Styling: End */
 
 /* Home Page Header Styling: Start */
-@font-face 
-{ 
-    font-family: gaps; src: url("./fonts/gaps.otf"); 
-} 
 header
 {
     display: flex;
@@ -110,7 +112,6 @@ header
     padding-top: 2em;
     background: #d583c5;
     background-image: linear-gradient(#051923 20%, #FE2280);
-    /*00094A*/
     font-family: "gaps", sans-serif;
     font-style: normal;
     font-variation-settings: "HORZ" 0, "LIFT" 100, "THRU" 50, "VERT" 0;
@@ -148,16 +149,35 @@ header h2
 }
 /* Home Page Header Styling: End */
 
+/* Main: Home Page Styling: Start */
 main
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background: #006494;
     background-image: url("./images/headerbg.jpg");
     background-position: 0 305px;
     background-size: 100% 100%;
-    border: 0;
 }
+
+main figure
+{
+    border: 0.5mm outset #FE2280;
+    margin: 2%;
+    width: 50%;
+    height: 60%;
+}
+
+main img
+{
+    width: 100%;
+    height: 100%;
+}
+/* Main: Home Page Styling: End */
 
 /* Footer Component Styling: Start */
 footer
