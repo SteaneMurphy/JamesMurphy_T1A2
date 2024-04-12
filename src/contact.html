@@ -24,17 +24,27 @@
             </div>
         </nav>
 
-        <main>
-            <div id="contactUsLeft"></div>
+        <main id="contactmain">
+            <aside id="contactleft">
+                <h2>Get In Touch!</h2>
+                <ul>
+                    <li><a href="https://www.github.com/SteaneMurphy" target=”_blank”>GitHub</a></li>
+                    <li><a href="https://www.discordapp.com/users/steane" target=”_blank”>Discord</a></li>
+                    <li><a href="https://www.linkedin.com/in/james-murphy-2b31791b3/" target=”_blank”>LinkedIn</a></li>
+                    <li><a href="https://twitter.com/steanemurphy" target=”_blank”>Twitter</a></li>
+                </ul>
+                <div>
+                    <img src="./images/code1.PNG">
+                </div>              
+            </aside>
             <fieldset>
                 <form>
-                    <label id="namefield">Your Name: <input type="text" name="name"></label>
-                    <label id="emailfield">Your Email: <input type="text" name="email"></label>
-                    <input id="textfield" type="text">
+                    <label for="name">Your Name: </label><input class="inputfield" type="text" name="name">
+                    <label for="email">Your Email: </label><input class="inputfield" id="emailfield" type="text" name="email">
+                    <textarea id="textfield" type="textarea" name="maintext"></textarea>
                     <input id="submitbutton" type="submit" value="Submit">
                 </form>
             </fieldset>
-
         </main>
 
         <!--Footer & Social Media Bar Component-->
