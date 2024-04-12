@@ -339,17 +339,40 @@ footer p
     height: 50%;
 }
 
-#socialbar img
+#socialbar .icon
 {
-    padding-right: 1em;
+    margin-right: 1em;
     width: 100%;
     height: 100%; 
 }
 
-#socialbar img:hover
+#socialbar .icon:hover
 {
     filter: blur(2px);
     background: #FE2280;;
+}
+
+#logoGit
+{
+    border-radius: 8%;
+    content:url("./images/github.png")
+}
+#logoItch
+{
+    content:url("./images/itchio.png")
+}
+#logoLinked
+{
+    content:url("./images/linkedin.png")
+}
+#logoTwitter
+{
+    content:url("./images/twitter.png")
+}
+
+#github
+{
+    border-radius: 8%;
 }
 
 @media only screen and (max-width: 510px)
