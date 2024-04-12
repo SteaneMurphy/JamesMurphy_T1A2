@@ -295,6 +295,45 @@ main p
 }
 /* Main: Home Page Styling: End */
 
+/* Main: Form Styling: Start */
+#contactUsLeft
+{
+    width: 40%;
+    height: 80vh;
+    background: blue;
+    margin-right: 5%;
+}
+
+form
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+form #namefield
+{
+    width: 100%;
+    height: 5vh;
+}
+form #emailfield
+{
+    width: 100%;
+    height: 5vh;
+}
+form #textfield
+{
+    width: 100%;
+    height: 40vh;
+}
+form #submitbutton
+{
+    width: 100%;
+    height: 5vh;
+}
+/* Main: Form Styling: End */
+
 /* Footer Component Styling: Start */
 footer
 {
