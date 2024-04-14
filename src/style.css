@@ -322,12 +322,14 @@ header h2
 {
     width: 50%;
     height: 80vh;
+    border: 0.5mm outset #FE2280;
 }
 
 #mainPortfolio p
 {
     flex: 1;
     height: 80vh;
+    padding: 0 1em;
 }
 
 #mainPortfolio h2
@@ -336,14 +338,14 @@ header h2
     padding-bottom: 1em;
 }
 
-#mainPortfolio section:nth-of-type(even)
+/*#mainPortfolio section:nth-of-type(even)
 {
     flex-direction: row-reverse;
-}
+}*/
 
 #mainPortfolio h2:first-of-type
 {
-    padding-top: 1em;
+    margin-top: 5vh;
 }
 
  /******************************************** 
@@ -541,6 +543,17 @@ footer
     {
         margin-left: 1em;
     }
+
+    #mainPortfolio section
+    {
+        flex-direction: column;
+    }
+
+    #mainPortfolio img, #mainPortfolio h2, #mainPortfolio img p
+    {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* desktop layout */
@@ -555,6 +568,4 @@ footer
     {
         margin-left: 1em;
     }
-
-
 }
