@@ -21,10 +21,15 @@ The portfolio consists of multiple pages, highlighting different web components 
 The site consists of the following pages:
 
 - Home
+    - The landing page
 - About Me
+    - Description of skills and link to resume
 - Contact
+    - Links to social media and email form
 - Portfolio
+    - Placeholder portfolio components examples
 - Blog
+    - Placeholder blog component examples
 
 The user can navigate the site by the use of links in the navigation bar. This navigation will follow the user as they scroll through the page.
 
