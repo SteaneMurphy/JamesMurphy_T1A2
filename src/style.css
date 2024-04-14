@@ -222,7 +222,7 @@ header h2
     display: flex;
     flex-wrap: wrap;
      height: 80vh;
-     margin-top: 2em;
+     margin-top: 5vh;
      flex: 1;
  }
 
@@ -257,7 +257,7 @@ header h2
      display: flex;
      flex-wrap: wrap;
      align-items: flex-start;
-     margin-top: 2em;
+     margin-top: 5vh;
      margin-right: 1em;
      height: 80vh;
  }
@@ -456,48 +456,53 @@ footer
 /* small mobile layout */
 @media only screen and (max-width: 400px)
 {
-   footer p
-   {
+    footer p
+    {
         display: none;
-   }
+    }
 
-   footer
-   {
+    footer
+    {
         justify-content: center;
-   }
+    }
 
-   #navlinks p
-   {
+    #navlinks p
+    {
         padding: 0;
-   }
+    }
 
-   header h1 
-   {
+    header h1 
+    {
         margin-left: 0;
         font-size: 2em;
         width: 100%;
-   }
+    }
 
-   header #subheading
-   {
+    header #subheading
+    {
         display: none;
-   }
+    }
 
-   header
-   {
+    header
+    {
         text-align: center;
         height: 10vh;
-   }
+    }
 
-   #mainAbout img
+    #mainAbout img
+    {
+        display: none;
+    }
+
+    #mainContact img
     {
         display: none;
     }
 }
 
 /* modern mobile layout */
- @media only screen and (max-width: 500px)
- {
+@media only screen and (max-width: 500px)
+{
     nav h4, nav img
     {
         display: none;
@@ -509,9 +514,9 @@ footer
     }
 }
 
- /* tablet layout */
- @media only screen and (max-width: 900px)
- {
+/* tablet layout */
+@media only screen and (max-width: 900px)
+{
     #mainHome
     {
         flex-direction: column;
@@ -527,10 +532,29 @@ footer
         padding-right: 1em;
     }
 
- }
+    #mainContact #submitbutton
+    {
+        width: 100%;
+    }
 
- /* desktop layout */
- @media only screen and (min-width: 1000px)
- {
+    #mainContact form
+    {
+        margin-left: 1em;
+    }
+}
 
- }
+/* desktop layout */
+@media only screen and (max-width: 1200px)
+{
+    #mainContact
+    {
+        flex-direction: column;
+    }
+
+    #mainContact aside
+    {
+        margin-left: 1em;
+    }
+
+
+}
