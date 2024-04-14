@@ -148,6 +148,7 @@ header h2
  #mainHome figure
  {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex: 1;
@@ -158,6 +159,49 @@ header h2
     width: 80%;
     height: auto;
     border: 0.5mm outset #FE2280;
+ }
+
+ /******************************************** 
+ *       Main Component: Home Page          *
+ ********************************************/
+ #mainAbout
+ {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+ }
+
+ #mainAbout article
+ {
+    padding-left: 1em;
+    flex-basis: 50%;
+ }
+
+ #mainAbout p
+ {
+    padding-bottom: 1em;
+ }
+
+ #mainAbout a
+ {
+    color: #FE2280;
+ }
+
+ #mainAbout a:visited
+ {
+    color: #FE2280;
+ }
+
+ #mainAbout figure
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #mainAbout img
+ {
+    width: 80%;
  }
 
 /******************************************** 
