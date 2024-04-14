@@ -145,3 +145,10 @@ The tech stack that was used to create this site:
 
 ## REFERENCES
 
+Pavlik, V, 2022, 'Semantic HTML: What It Is and How to Use It Correctly', *Semrush Blog*, blog post, December 3, viewed 7 April 2024, https://www.semrush.com/blog/semantic-html5-guide/
+
+W3Schools, 2024, *CSS Reference*, viewed 8 April 2024, https://www.w3schools.com/cssref/index.php
+
+W3Schools, 2024, *HTML Semantic Elements*, viewed 7 April 2024, https://www.w3schools.com/html/html5_semantic_elements.asp
+
+Vecteezy.com, 2024, *vector retro futuristic background*, online image, viewed 5 April 2024, https://www.vecteezy.com/vector-art/5266448-vector-retro-futuristic-background
