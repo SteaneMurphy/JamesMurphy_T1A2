@@ -45,6 +45,38 @@ body
     margin-bottom: 1em;
 }
 
+#port
+{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1em 1em;
+    border-bottom: 0.5mm outset #FE2280;
+}
+
+#port img
+{
+    width: 50%;
+    height: 80vh;
+}
+
+#port p
+{
+    width: 50%;
+    height: 80vh;
+}
+
+#port h2
+{
+    width: 100%;
+}
+
+#port:nth-of-type(even)
+{
+    flex-direction: row-reverse;
+}
+
 /* Navigation Bar Component Styling: Start */
 nav
 {
