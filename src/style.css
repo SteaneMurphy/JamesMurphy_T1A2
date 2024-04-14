@@ -1,83 +1,53 @@
+
+/******************************************** 
+ *         Entire Docuemnt Styling          *
+ ********************************************/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-@font-face 
-{ 
-    font-family: gaps; src: url("./fonts/gaps.otf"); 
-} 
-
-body 
+body
 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "gaps", sans-serif;
+    color: white;
 }
 
-#mainblog
+main
 {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 10vh;
+    min-height: 100vh;
+    height: auto;
+    background-image: url("./images/headerbg.jpg");
+    background-position: 0 45vh;
+    background-size: 100% 100%;
 }
 
-#blog
+a
 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 1em;
+    font-family: "gaps", sans-serif;
+    color: white;
+    text-shadow: 0px 0px 10px #FE2280;
+    text-decoration: none;
 }
 
-#blog img
+a:hover
 {
-    margin-bottom: 1em;
-    width: 100%;
-    height: 30vh;
+    color: #FE2280;
 }
 
-#blog h2
-{
-    width: 40%;
-    margin-bottom: 1em;
+@font-face 
+{ 
+    font-family: gaps; src: url("./fonts/gaps.otf"); 
 }
 
-#port
-{
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 1em 1em;
-    border-bottom: 0.5mm outset #FE2280;
-}
-
-#port img
-{
-    width: 50%;
-    height: 80vh;
-}
-
-#port p
-{
-    width: 50%;
-    height: 80vh;
-}
-
-#port h2
-{
-    width: 100%;
-}
-
-#port:nth-of-type(even)
-{
-    flex-direction: row-reverse;
-}
-
-/* Navigation Bar Component Styling: Start */
+/******************************************** 
+ *     Navigation Bar Component Styling     *
+ ********************************************/
 nav
 {
     display: flex;
@@ -88,18 +58,11 @@ nav
     height: 5vh;
     padding: 0 1em;
     background: #051923;
-}
-
-nav a, p, h4, label, #submitbutton, h2, li
-{
     text-shadow: 0px 0px 10px #FE2280;
-    font-family: "gaps", sans-serif;
-    color: white;
 }
 
 nav h4
 {
-    color: white;
     padding-left: 1em;
 }
 
@@ -108,16 +71,6 @@ nav h4
     display: flex;
     justify-content: flex-end;
     flex: 1;
-}
-
-nav a
-{
-    text-decoration: none;
-}
-
-nav a:hover
-{
-    color: #FE2280;
 }
 
 #navlinks p
@@ -138,43 +91,9 @@ nav a:hover
     height: 100%;   
 }
 
-@media only screen and (max-width: 510px)
-{
-    nav h4
-    {
-        display: none;
-    }
-
-    #navlinks
-    {
-        padding: 0;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 430px)
-{
-    #logo
-    {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 400px)
-{
-    nav
-    {
-        padding: 0;
-    }
-    
-    #navlinks p
-    {
-        padding: 0;
-    }
-}
-/* Navigation Bar Component Styling: End */
-
-/* Home Page Header Styling: Start */
+/******************************************** 
+ *         Header Component Styling         *
+ ********************************************/
 header
 {
     display: flex;
@@ -185,12 +104,7 @@ header
     width: 100%;
     height: 40vh;
     padding-top: 2em;
-    background: #d583c5;
     background-image: linear-gradient(#051923 20%, #FE2280);
-    font-family: "gaps", sans-serif;
-    font-style: normal;
-    font-variation-settings: "HORZ" 0, "LIFT" 100, "THRU" 50, "VERT" 0;
-    color: white;
 }
 
 header h1, #leftside
@@ -200,11 +114,7 @@ header h1, #leftside
 
 header h1
 {
-    font-family: "gaps", sans-serif;
     text-shadow: 0px 0px 10px #FE2280;
-    font-weight: 1000;
-    font-style: normal;
-    color: #ffffff;
     height: 0.1em;
     font-size: 4em;
     width: 60%;
@@ -222,282 +132,182 @@ header h2
     padding-right: 1em;
     text-shadow: 0px 0px 10px #1e0349;
 }
-@media only screen and (max-height: 480px)
-{
-    #subheading
-    {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 850px)
-{
-    header h1, #leftside
-    {
-        margin-left: 0;
-    }
-
-    header h1
-    {
-        height: 0.1em;
-        font-size: 4em;
-        width: 100%;
-    }
-
-    header
-    {
-        text-align: center;
-    }
-
-    #subheading
-    {
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 530px)
-{
-    header h1
-    {
-        height: 0.1em;
-        font-size: 3em;
-        width: 100%;
-    }
-    
-    #subheading
-    {
-        display: flex;
-        width: 100%;
-        justify-content: flex-start;
-    }
-}
-
-@media only screen and (max-width: 530px)
-{  
-    header
-    {
-        height: 30vh;
-    }
-
-    #subheading
-    {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 400px)
-{  
-    header
-    {
-        align-items: flex-start;
-    }
-}
-/* Home Page Header Styling: End */
-
-/* Main: Home Page Styling: Start */
-main
-{
+/******************************************** 
+ *       Main Component: Home Page          *
+ ********************************************/
+ #mainHome
+ {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+ }
+
+ #mainHome figure
+ {
+    display: flex;
     align-items: center;
+    justify-content: center;
     flex: 1;
-    width: 100%;
+ }
+
+ #mainHome img
+ {
+    width: 80%;
     height: auto;
-    min-height: 100vh;
-    background: #006494;
-    background-image: url("./images/headerbg.jpg");
-    background-position: 0 45vh;
-    background-size: 100% 100%;
-}
-
-main figure
-{
     border: 0.5mm outset #FE2280;
-    margin: 2%;
-    width: 45%;
-    height: 60%;
-}
+ }
 
-main img
-{
-    width: 100%;
-    height: 100%;
-}
-
-main p
-{
-    flex: 1;
-}
-
-@media only screen and (max-width: 550px)
-{
-    main
-    {
-        height: 100vh;
-    }
-    main figure
-    {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 800px)
-{
-    main
-    {
-        height: 100vh;
-    }
-    main figure
-    {
-        width: 100%;
-        height: auto;
-    }
-}
-/* Main: Home Page Styling: End */
-
-/* Main: Form Styling: Start */
-#contactleft
-{
-    width: 40%;
-    height: 80vh;
-    margin-top: 2em;
-    margin-right: 5%;
-}
-
-form
-{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-top: 2em;
-    width: 100%;
-    height: 80vh;
-}
-
-fieldset
-{
-    border: 0;
-}
-
-form label, .inputfield
-{
-    margin-right: 2%;
-    margin-bottom: 2%;
-}
-
-.inputfield
-{
-    border-color: #FE2280;
-    color: white;
-    background-color: #fe228161;
-}
-
-#emailfield
-{
-    width: 35%;
-}
-
-form #textfield
-{
-    border-color: #FE2280;
-    text-align: top;
-    width: 100%;
-    height: 65vh;
-    color: white;
-    background-color: #fe228161;
-}
-form #submitbutton
-{
-    border-color: #FE2280;
-    background: none;
-    margin-top: 1em;
-    width: 10%;
-    height: 5vh;
-}
-
-form #submitbutton:hover
-{
-    background: #fe228161;
-}
-
-aside h2
-{
-    padding-bottom: 1%;
-    margin-left: 1em;
-}
-
-aside li
-{
-    padding-bottom: 1%;
-    margin-left: 10%;
-}
-
-aside div
-{
-    padding-top: 2em;
-}
-
-aside img
-{
-    border: 0.5mm outset #FE2280;
-    width: 100%;
-    height: 55vh;
-}
-
-aside a
-{
-    text-shadow: 0px 0px 10px #FE2280;
-    font-family: "gaps", sans-serif;
-    color: white;
-    text-decoration: none;
-}
-
-aside a:hover
-{
-    color: #FE2280;
-}
-
-@media only screen and (max-width: 1280px)
-{
-    aside div
-    {
-        display: none;
-    }
-}
-/* Main: Form Styling: End */
-
-/* Main: About Page Styling: Start */
-main #mainabout
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-main #aboutimg
+/******************************************** 
+ *       Main Component: Contact Page       *
+ ********************************************/
+#mainContact
 {
     display: flex;
     justify-content: space-between;
+    padding-top: 1em;
+}
+
+.inputfield, #textfield, #submitbutton
+{
+    color: white;
+    font-family: "gaps", sans-serif;
+}
+
+ aside
+ {
+    display: flex;
+    flex-wrap: wrap;
+     height: 80vh;
+     margin-top: 2em;
+     flex: 1;
+ }
+
+ aside h2, ul
+ {
     width: 100%;
-    height: auto;
+    margin-left: 1em;
+ }
+
+ aside ul
+ {
+    margin-left: 3em;
+ }
+
+ aside div
+ {
+    flex: 1;
+    display: flex;
+    align-items: center;
+ }
+
+ aside img
+ {
+    margin-left: 1em;
+     border: 0.5mm outset #FE2280;
+     width: 90%;
+     height: 55vh;
+ }
+ 
+ form
+ {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     margin-top: 2em;
+     margin-right: 1em;
+     height: 80vh;
+ }
+ 
+ fieldset
+ {
+     border: 0;
+ }
+ 
+ form label, .inputfield
+ {
+     margin-right: 2%;
+     margin-bottom: 2%;
+ }
+ 
+ .inputfield
+ {
+     border-color: #FE2280;
+     background-color: #fe228161;
+ }
+ 
+ #emailfield
+ {
+     width: 35%;
+ }
+ 
+ form #textfield
+ {
+     border-color: #FE2280;
+     text-align: top;
+     width: 100%;
+     height: 65vh;
+     background-color: #fe228161;
+ }
+
+ form #submitbutton
+ {
+     border-color: #FE2280;
+     background: none;
+     width: 10%;
+ }
+ 
+ form #submitbutton:hover
+ {
+     background: #fe228161;
+ }
+
+ /******************************************** 
+ *      Main Component: Portfolio Page       *
+ ********************************************/
+ #mainPortfolio section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em 1em;
+    border-bottom: 0.5mm outset #FE2280;
 }
 
-#mainabout p
+#mainPortfolio img
 {
-    margin-top: 10%;
-}
-
-#aboutimg img
-{
-    margin: 1em 1em;
     width: 50%;
+    height: 80vh;
 }
-/* Main: About Page Styling: Start */
 
-/* Footer Component Styling: Start */
+#mainPortfolio p
+{
+    flex: 1;
+    height: 80vh;
+}
+
+#mainPortfolio h2
+{
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+#mainPortfolio section:nth-of-type(even)
+{
+    flex-direction: row-reverse;
+}
+
+#mainPortfolio h2:first-of-type
+{
+    padding-top: 1em;
+}
+
+/******************************************** 
+ *         Footer Component Styling         *
+ ********************************************/
 footer
 {
     display: flex;
@@ -507,31 +317,14 @@ footer
     height: 8vh;
     padding: 0 1em;
     background: #051923;
-}
-
-footer a, p
-{
     text-shadow: 0px 0px 10px #FE2280;
-    text-decoration: none;
-    font-family: "gaps", sans-serif;
-    color: white;
-}
-
-footer a:hover
-{
-    color: #FE2280;
-}
-
-footer p
-{
-    padding-left: 37%;
 }
 
 #footertext
 {
-    flex: 1;
     display: flex;
     justify-content: space-between;
+    width: 55%;
 }
 
 #socialbar
@@ -571,25 +364,3 @@ footer p
 {
     content:url("./images/twitter.png")
 }
-
-#github
-{
-    border-radius: 8%;
-}
-
-@media only screen and (max-width: 510px)
-{
-    footer p
-    {
-        padding: 0;
-    }
-}
-
-@media only screen and (max-width: 410px)
-{
-    footer p
-    {
-        display: none;
-    }
-}
-/* Footer Component Styling: End */
